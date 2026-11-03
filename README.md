@@ -66,17 +66,17 @@ Paste when prompted.
 
 ### 4. Set your schedule
 
-Default is weekdays at 2:30 UTC.
+Default is weekdays at 4:30 UTC.
 
 GitHub Actions requires `on.schedule.cron` to be a literal value in the workflow file, so changing the schedule means editing `.github/workflows/warmup.yml` and updating this line:
 
 ```yml
-- cron: '30 2 * * 1-5'
+- cron: '30 4 * * 1-5'
 ```
 
 That's a standard cron expression in UTC. Common conversions:
 
-Need help generating one? Try [crontab.guru](https://crontab.guru/#30_2_*_*_1-5).
+Need help generating one? Try [crontab.guru](https://crontab.guru/#30_4_*_*_1-5).
 
 | Timezone | 6:15 AM local in UTC | Cron |
 | --- | --- | --- |
